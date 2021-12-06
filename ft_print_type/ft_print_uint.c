@@ -6,7 +6,7 @@
 /*   By: bregneau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 16:51:02 by bregneau          #+#    #+#             */
-/*   Updated: 2021/12/02 17:01:14 by bregneau         ###   ########.fr       */
+/*   Updated: 2021/12/04 08:26:45 by bregneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ char	*ft_utoa(unsigned int n)
 	return (ft_strdup(tmp));
 }
 
-int ft_print_uint(unsigned int i)
+int	ft_print_uint(unsigned int i)
 {
-	char *a;
+	char	*a;
 
 	a = ft_utoa(i);
 	ft_putstr_fd(a, 1);

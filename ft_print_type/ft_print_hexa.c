@@ -6,7 +6,7 @@
 /*   By: bregneau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 12:09:09 by bregneau          #+#    #+#             */
-/*   Updated: 2021/12/02 16:38:14 by bregneau         ###   ########.fr       */
+/*   Updated: 2021/12/04 08:25:42 by bregneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_itoa_hexa(unsigned long n)
 	return (ft_strdup(tmp));
 }
 
-void ft_strtoupper(char *str)
+void	ft_strtoupper(char *str)
 {
 	while (*str)
 	{
@@ -47,9 +47,9 @@ void ft_strtoupper(char *str)
 	}
 }
 
-int ft_print_hexa(unsigned long nbr, char c)
+int	ft_print_hexa(unsigned long nbr, char c)
 {
-	char *hexa;
+	char	*hexa;
 
 	hexa = ft_itoa_hexa(nbr);
 	nbr = ft_strlen(hexa);

@@ -6,14 +6,14 @@
 /*   By: bregneau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 12:02:32 by bregneau          #+#    #+#             */
-/*   Updated: 2021/12/02 17:11:31 by bregneau         ###   ########.fr       */
+/*   Updated: 2021/12/04 08:22:35 by bregneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdarg.h>
 
-int ft_parse_arg(char c, va_list ap)
+int	ft_parse_arg(char c, va_list ap)
 {
 	if (c == 'c')
 		return (ft_print_char(va_arg(ap, int)));
@@ -34,9 +34,9 @@ int ft_parse_arg(char c, va_list ap)
 
 int	ft_printf(const char *format, ...)
 {
-	va_list ap;
-	int i;
-	int count;
+	va_list	ap;
+	int		i;
+	int		count;
 
 	va_start(ap, format);
 	i = 0;

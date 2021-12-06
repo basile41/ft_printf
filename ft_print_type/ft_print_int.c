@@ -6,15 +6,15 @@
 /*   By: bregneau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 21:09:42 by bregneau          #+#    #+#             */
-/*   Updated: 2021/12/01 21:16:46 by bregneau         ###   ########.fr       */
+/*   Updated: 2021/12/04 08:26:00 by bregneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft/libft.h"
 
-int ft_print_int(int i)
+int	ft_print_int(int i)
 {
-	char *a;
+	char	*a;
 
 	a = ft_itoa(i);
 	ft_putstr_fd(a, 1);
